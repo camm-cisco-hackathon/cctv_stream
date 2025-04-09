@@ -1,0 +1,2 @@
+ffmpeg -i rtsp://192.168.128.11:9000/live \
+       -f rtsp rtsp://0.0.0.0:8554/relay
