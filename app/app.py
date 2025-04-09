@@ -6,7 +6,12 @@ import time
 import os
 
 width, height = 1920, 1080
-rtsp_url = 'rtsp://192.168.128.11:9000/live'
+
+# meraki cam과 동일한 LAN에 위치해 있을 경우 아래 경로 사용
+#rtsp_url = 'rtsp://192.168.128.11:9000/live'
+
+# ffmpeg proxy 사용할 경우 아래 경로 사용
+rtsp_url = 'rtsp://100.114.15.48:8554/relay'
 
 output_dir = 'frames'
 os.makedirs(output_dir, exist_ok=True)
